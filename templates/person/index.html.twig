@@ -1,0 +1,14 @@
+{% extends 'base.html.twig' %}
+
+{% block title %}Template{% endblock %}
+
+{% block body %}
+{% for person in persons %%}
+    <table>
+        <tr>
+            <td>Id </td> <td> Lastname </td> <td> birthday </td><td> level </td>
+            <td>{{ person.id }} </td><td>{{ person.Lastname }} </td><td>{{ person.birthday }} </td><td>{{ person.level }} </td>
+        </tr>
+    </table>
+
+{% endblock %}
